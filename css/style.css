@@ -58,8 +58,8 @@
 }
 
 .btn:hover {
-    background-color: rgb(255, 229, 84); /* Change background color */
-    transform: scale(1.1); /* Slightly enlarge the button */
+    background-color: rgb(255, 229, 84);
+    transform: scale(1.1); 
 }
 
 .btn2 {
