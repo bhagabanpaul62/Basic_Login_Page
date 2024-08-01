@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all.com</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        #main {
+            height: 100vh;
+            width: 100vw;
+            /* background-color: rgb(164, 164, 164); */
+            background-image: url(../1.jpg);
+
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            height: 90vh;
+            width: 40vw;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        #text {
+            font-size: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        #content input {
+            width: 30vw;
+            height: 6vh;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        #content lable {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+
+        }
+
+        .btn {
+            width: 10vw;
+            height: 6vh;
+            margin: 10px;
+            position: relative;
+            left: 10vw;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(255, 84, 84);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 229, 84);
+            /* Change background color */
+            transform: scale(1.1);
+            /* Slightly enlarge the button */
+        }
+
+        .btn2 {
+            width: 10vw;
+            height: 6vh;
+            margin: 10px;
+            position: relative;
+            left: 10vw;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(255, 229, 84);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn2:hover {
+            background-color: rgb(255, 84, 84);
+            transform: scale(1.1);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="content">
+            <div id="text">
+                <h1>Sing up page</h1>
+            </div>
+            <from action="/submit">
+                <div id=name>
+                    <lable for="userid">User id</lable>
+                    <input type="text" id="userid" name="userid" placeholder="Enter your username..."></input>
+                </div>
+                <div id="num">
+                    <lable for="num">Phone number</lable>
+                    <input type="num" id="numf" name="num" placeholder="Enter your phone number..."></input>
+                </div>
+                <div id="roll">
+                    <lable for="roll">roll</lable>
+                    <input type="number" id="rollf" name="roll" placeholder="Enter your Roll Number.."></input>
+                </div>
+                <div id="pass">
+                    <lable for="pass">Password</lable>
+                    <input type="text" id="passf" name="pass" placeholder="Enter your password..."></input>
+                </div>
+                <div id="conpass">
+                    <lable for="conpass">Confirm Password</lable>
+                    <input type="text" id="conpassf" name="conpass" placeholder="Enter your password..."></input>
+                </div>
+
+
+                <div id="sing_up">
+                    <button type="submit" class="btn2" class="color2" onclick="location.href='loginpage.html'" >sing
+                        up</button>
+                </div>
+                <div id=" sing_in">
+                        <button type="submit" class="btn" class="color1" onclick="location.href='loginpage.html'">sing in</button>
+                </div>
+
+</body>
+
+</html>
